@@ -1,74 +1,69 @@
-import Image from "next/image";
-import { assets, infoList, toolsData } from "@/assets/assets";
 import React from "react";
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className="w-full px-4 sm:px-8 lg:px-[12%] py-10 scroll-mt-20"
-    >
-      <h4 className="text-center mb-2 text-base md:text-lg font-Ovo ">
-        Introduction
-      </h4>
-      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-Ovo mb-8">
-        About Me
-      </h2>
+    <section id="about" className="py-16 px-20 bg-gray-900">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          About <span className="gradient-text">Me</span>
+        </h2>
+        <div className="flex flex-col md:flex-row items-center">
+          {/* Profile SVG */}
+          <div className="md:w-2/5 mb-8 md:mb-0">
+            <div className="relative">
+              <div className="w-full h-80 bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
+                <svg
+                  className="w-32 h-32 text-gray-700"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg"></div>
+            </div>
+          </div>
 
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 my-10">
-        <div className="w-36 sm:w-48 md:w-56 lg:w-64 xl:w-80 rounded-3xl max-w-full flex-shrink-0 mx-auto">
-          <Image
-            src={assets.user_image}
-            alt="User"
-            className="rounded-3xl shadow-lg object-cover w-full h-auto"
-            width={320}
-            height={320}
-            priority
-          />
-        </div>
+          {/* Info Section */}
+          <div className="md:w-3/5 md:pl-12">
+            <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
+            <p className="text-gray-300 mb-4">
+              I’m an enthusiastic undergraduate student passionate about web development. 
+              I have been learning and building modern, responsive websites, focusing on front-end development and UI UX designs. 
+              I enjoy creating user-friendly designs with an emphasis on accessibility and great user experience.
+            </p>
+            <p className="text-gray-300 mb-6">
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open-source projects, or enjoying outdoor
+              activities to maintain a healthy work-life balance.
+            </p>
 
-        <div className="flex-1 w-full">
-          <p className="mb-8 max-w-2xl mx-auto text-gray-700 font-Ovo text-base sm:text-lg leading-relaxed text-center lg:text-left">
-           I am a passionate UI/UX
-            Designer & Frontend Developer dedicated to crafting beautiful and
-            functional digital experiences. My focus is on clean, intuitive, and
-            responsive interfaces that delight users and drive results.
-          </p>
-
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-3xl mx-auto">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <li
-                className="border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 transition-all duration-500 hover:shadow-black"
-                key={index}
-              >
-                <Image
-                  src={icon}
-                  alt={title}
-                  className="w-7 h-8 mb-3"
-                  width={32}
-                  height={32}
-                />
-                <h3 className="mb-2 font-semibold text-gray-800 text-base">
-                  {title}
-                </h3>
-                <p className="text-gray-600 text-sm">{description}</p>
-              </li>
-            ))}
-          </ul>
-
-          <h4 className="my-6 text-gray-700 font-ovo">Tools I use</h4>
-          <ul className="flex items-centergap-3 sm:gap-5">
-            {toolsData.map((tool, index) => (
-              <li className="flex item-center justify-center w-8 sm:w-14 aspect-square border-x-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-500" 
-              key={index}>
-                <Image src={tool} alt="Tools" className="w-3 sm:w-7"/>
-              </li>
-            ))}
-          </ul>
-
+            {/* Skills / Info Pills */}
+            <div className="flex flex-wrap gap-4">
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center mr-3">
+                  <i className="fas fa-map-marker-alt text-indigo-400"></i>
+                </div>
+                <span className="text-gray-300">Higher diploma in software engineering </span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center mr-3">
+                  <i className="fas fa-graduation-cap text-indigo-400"></i>
+                </div>
+                <span className="text-gray-300">Best Performances </span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center mr-3">
+                  <i className="fas fa-briefcase text-indigo-400"></i>
+                </div>
+                <span className="text-gray-300">Years Experience</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
