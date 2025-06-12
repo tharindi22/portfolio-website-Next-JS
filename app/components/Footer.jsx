@@ -37,10 +37,10 @@ const Footer = () => {
               <i className="fab fa-github"></i>
             </a>
             <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Twitter">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-facebook"></i>
             </a>
             <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Dribbble">
-              <i className="fab fa-dribbble"></i>
+              <i className="fab fa-youtube"></i>
             </a>
           </div>
         </div>
