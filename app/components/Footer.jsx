@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -12,40 +12,65 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-6 mb-4 md:mb-0">
-            <a href="#home" className="text-gray-400 hover:text-white transition">
+            <a
+              href="#home"
+              className="text-gray-400 hover:text-white transition"
+            >
               Home
             </a>
-            <a href="#about" className="text-gray-400 hover:text-white transition">
+            <a
+              href="#about"
+              className="text-gray-400 hover:text-white transition"
+            >
               About
             </a>
-            <a href="#projects" className="text-gray-400 hover:text-white transition">
+            <a
+              href="#projects"
+              className="text-gray-400 hover:text-white transition"
+            >
               Projects
             </a>
-            <a href="#skills" className="text-gray-400 hover:text-white transition">
+            <a
+              href="#skills"
+              className="text-gray-400 hover:text-white transition"
+            >
               Skills
             </a>
-            <a href="#contact" className="text-gray-400 hover:text-white transition">
+            <a
+              href="#contact"
+              className="text-gray-400 hover:text-white transition"
+            >
               Contact
             </a>
           </div>
 
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white transition" aria-label="LinkedIn">
-              <i className="fab fa-linkedin-in"></i>
+            <a
+              href="https://www.linkedin.com/in/tharindi-aththanayaka-06a489313/"
+              className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-indigo-600 hover:text-white transition"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition" aria-label="GitHub">
-              <i className="fab fa-github"></i>
+            <a
+              href="https://github.com/tharindi22?tab=overview&from=2025-02-01&to=2025-02-05"
+              className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-indigo-600 hover:text-white transition"
+            >
+              <i class="fa-brands fa-github"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Twitter">
-              <i className="fab fa-facebook"></i>
+            <a
+              href="https://www.facebook.com/profile.php?id=61553104328803"
+              className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-indigo-600 hover:text-white transition"
+            >
+              <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Dribbble">
-              <i className="fab fa-youtube"></i>
+            <a
+              href="https://www.instagram.com/tharindi_attanayaka/"
+              className="w-8 h8 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-indigo-600 hover:text-white transition"
+            >
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>
-
-        
       </div>
     </footer>
   );
